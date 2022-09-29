@@ -6,8 +6,8 @@ alert(firstName);
 alert(lastName);
 firstName="John";
 lastName="Snow";
-alert(firstName+" "+lastName);
-const fullName="fullName"+" "+"lastName";
+alert(firstName +" "+ lastName);
+const fullName= `${firstName} ${lastName}`;
 
 
 // Do the following:
@@ -20,15 +20,17 @@ const fullName="fullName"+" "+"lastName";
 // Create a new varaible using `const` named `fullName` and assign the fullname using firstName and lastName seperated by space.
 
 // Declare three variables `name,` `newUser` and `isAdmin`.
+let name, newUser, isAdmin;
 // Assign your name as the value of `name`.
+name="Parth"
 // Assign the value of `name` to `newUser`.
+newUser=name;
 // Set the value of `isAdmin` to `true`.
+isAdmin=true;
 // Alert the values of all the three variables.
-
-var name="Parth";
-let newUser="name";
-let isAdmin="true";
-alert(name,newUser,isAdmin);
+alert(name)
+alert(newUser)
+alert(isAdmin)
 
 // Assignment and re-assignment
 
@@ -48,14 +50,14 @@ oddNumber="61"
 // Mathematical Operation
 
 let amount = 4280;
-var reducedAmount=4280 - 24;
-var addedAmount=4280+32;
-var multipleAmount=4280*7;
-var dividedAmount=4280/57;
 
 // Using mathematical operations find the solutions. `(+, -, \*, / , etc.)`
 
 // Declare a new variable `reducedAmount`. In it store the value that is 24 less than the value of amount.
+let reducedAmount= amount - 24;
 // Declare another variable `addedAmount`. It's value should be 32 more than the value of amount.
+let addedAmount= amount+32;
 // Declare a variable `multipleAmount`. It's value should be 7 times the value of amount.
+let multipleAmount= amount*7;
 // Declare a variable `dividedAmount`. It should store the resultant of amount divided by 57.
+let dividedAmount= amount/57;
