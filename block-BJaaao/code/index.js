@@ -40,7 +40,10 @@ let userProfession=prompt("Profession of the user");
 let isAdult=confirm("Are you an Adult?");
 Boolean(isAdult)
 alert (`I am ${userName} a ${userProfession}`);
-console.log ("I am" + userName + "a" + userProfession);
+console.log (`I am ${userName} a ${userProfession}`);
+alert(`Username: ${userName}
+Adult:${isAdult}
+Profession: ${userProfession}`)
 /*
 . Addition using prompt
 
