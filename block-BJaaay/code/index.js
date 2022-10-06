@@ -3,7 +3,7 @@
 // Do the following using loops:
 
 // Using `console.log` log all the values from 1 to 10.
- for(let a=0;a<10;a= a=a+1)
+ for(let a=1;a<10;a= a=a+1)
  console.log(a)
 
 // Using `console.log` log all the evan values from 1 to 10.
@@ -19,11 +19,10 @@ if (a % 2 !== 0) {
 }
 
 // Calculate the sum of all numbers from 1 to 10.
-
+let sum = 0;
 for(let a=0;a<10;a=a+1)
-
- if(a=(a+=1)+a){
-    console.log (a)
+{ sum += a
+    console.log (sum)
 }
 
 // Log all the values from 1 to 10 using while loop
