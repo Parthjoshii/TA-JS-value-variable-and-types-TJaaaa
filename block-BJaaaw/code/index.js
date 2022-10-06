@@ -99,17 +99,20 @@ switch(month) {
   - `Salary > 50000` tax is 30 %
 
 */
-let salary = prompt ("Salary Expectation?")
+let salary = prompt("Salary Expectation?")
 let inHandSalary;
 switch (true) {
  case salary <= 20000:
-  alert (inHandSalary=(salary-((salary * 10) / 100)));
+  inHandSalary=(salary-((salary * 10) / 100))
+  alert(inHandSalary);
   break;
   case salary <= 40000 :
-    alert (inHandSalary=(salary-((salary * 20) /100)))
+    inHandSalary=(salary-((salary * 20) /100))
+    alert(inHandSalary)
     break;
   case salary > 50000 :
-    alert (inHandSalary=(salary - ((salary * 30) /100)))
+    inHandSalary=(salary - ((salary * 30) /100))
+    alert(inHandSalary)
 }
 
 //  if..else vs switch
