@@ -33,9 +33,9 @@ if (num1 > num2) {
   - `else` print the message " All men must die"
 */
 let house = prompt("Your Favorite GOT house?")
-if (house == "stark") {
+if (house === "stark") {
   alert("Winter Is Coming");
-} else if (house == "lannister") {
+} else if (house === "lannister") {
   alert("A Lannister always pays his debt");
 } else {
   alert("All men must die")
@@ -43,12 +43,10 @@ if (house == "stark") {
 
 
 // 5. Convert the above code using`?` terniary operator
-house=="stark" ?
+house==="stark" ?
 alert("Winter is Coming")
 :
-alert("All men must die")
-
-house == "lannister" ?
+house === "lannister" ?
 alert("A Lannister always pays his debts")
 :
 alert("All men must die")
@@ -57,7 +55,7 @@ alert("All men must die")
 
 // 6. Write a program that takes the number of the month(1 - 12) and alert number of days in the month.
 let month = prompt("Enter a Month in Number")
-switch(true) {
+switch(month) {
   case month == 1:
     alert("31 days");
     break;
@@ -126,7 +124,7 @@ Implement the condition give below using`if..else` and`switch` statement.
   - `marks > 0` alert`"Grade D"`
 
 */
-let marks = prompt("Enter your Marks");
+let marks = Number(prompt("Enter your Marks"));
 if (marks > 100) {
   alert(`Marks can't be greater than 100`)
 } else if (marks>80 && marks<100) {
@@ -135,7 +133,7 @@ if (marks > 100) {
   alert( `Grade B`)
 } else if (marks > 30 && marks < 50) {
   alert(`Grade C`)
-} else if (marks > 0 && marks<30) {
+} else {
   alert(`Grade D`)
 }
 
@@ -152,7 +150,7 @@ switch(true) {
   case marks>30 && marks<50 :
     alert(`Grade C`);
     break;
-  case marks> 0 && marks<30 :
+  default :
     alert(`Grade D`)
 }
 /* 9. Weather app
@@ -165,31 +163,31 @@ switch(true) {
   - Anything else should alert`Not a valid input`
 */
 let weather = prompt(`What is the weather like outside?`)
-if (weather == "sunny") {
+if (weather === "sunny") {
   alert(`Wear a T-shirt`)
-} else if (weather == "rainy") {
+} else if (weather === "rainy") {
   alert(`Don't forget your raincoat!`)
-} else if (weather == "hot") {
+} else if (weather === "hot") {
   alert(`Get a hanky`)
-} else if (weather == "freezing") {
+} else if (weather === "freezing") {
   alert(`Get your sweater on`)
 } else {
   alert(`Not a valid Input`)
 }
 
 switch (true) {
-  case weather == "sunny" :
+  case weather === "sunny" :
     alert(`Wear a T-shirt`)
     break;
-  case weather == "rainy" :
+  case weather === "rainy" :
     alert(`Dont forget your raincoat!`);
     break;
-  case weather == "hot" :
+  case weather === "hot" :
     alert(`Get a hanky`);
     break;
-  case weather == "freezing" :
+  case weather === "freezing" :
     alert(`Get your sweater on`)
     break;
   default :
-  alert(`Not a valid Input`)
+  alert(`Not a valid Input`) 
 }
