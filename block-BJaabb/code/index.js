@@ -5,22 +5,53 @@
 3. Declare variable `age` and `isLearning` with value `22` and `true` in the same line. hint: declaring multiplemvariable in one line.
 4. Now change the value of `user` to `John` and log the value of both `user` and `userName`.
 */
-
+let user = prompt(`Enter your name`)
+alert(`Your Name is ${user}`)
+ let userName = user
+ console.log (user)
+ console.log (userName)
+let age = Number(22), isLearning = true
+let userA = "John"
+userName = userA
+console.log(userA, userName)
 /* 2.
 Use `prompt` to take two numbers from user and store it in variable `numA` and `numB`. Create a third variable called `sum`, using `+` operator add numA and numB , store it in varible `sum` and using alert display `sum` in browser.
 */
-
+let numA = Number(prompt(`Enter a Number`))
+let numB = Number(prompt(`Enter second number`))
+let sum = (numA + numB)
+alert(`The sum of both numbers is ${sum}`)
 // Loops
 
 // 3. Complete the following code to make the output be 0 2 4 6 8 10?
 
-for (let j = 0; j <= 10; ____) console.log(j);
+for (let j = 0; j <= 10; j = j + 1) {
+    if(j % 2 == 0) {
+        console.log(j);
+    }
+}
+
 
 // 4. Print the odd numbers from 9 to 1 (both inclusive) using a for loop.
+for (let a = 9; a >= 1; a = a - 1) {
+    if(a % 2 !== 0) {
+        console.log(a);
+    }
+}
 
 // 5. Concat all the numbers from 5 to 0 (both inclusive) in descending order using a while loop. (543210)
+for (let b = 5; b >=0;b= b-1) {
+    if(b = "b" + b) {
+        console.log(b)
+    }
+}
 
 // 6. Concat all the even numbers from 10 to 0 (both inclusive) in descending order using a while loop. (1086420)
+for (let c = 10; c>= 0; c = c - 1) {
+    if (c % 2 == 0) {
+        console.log(c)
+    }
+}
 
 // Comparisoin
 
@@ -36,3 +67,10 @@ Example:
 "hello", -21; // false
 
 */
+let num1 = Number(prompt(`Enter a number`))
+let num2 = Number(prompt(`Enter another number`))
+if (num1 == num2) {
+    alert(true)
+} else {
+    alert(`Enter a valid value`)
+}
