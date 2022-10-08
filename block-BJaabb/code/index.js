@@ -40,18 +40,25 @@ for (let a = 9; a >= 1; a = a - 1) {
 }
 
 // 5. Concat all the numbers from 5 to 0 (both inclusive) in descending order using a while loop. (543210)
-for (let b = 5; b >=0;b= b-1) {
-    if(b = "b" + b) {
-        console.log(b)
-    }
+let finalString1 = "";
+let initialValue1 = 5;
+
+while (initialValue1 >= 0) {
+    finalString1 += initialValue1;
+    initialValue1--;
 }
+console.log(finalString1)
 
 // 6. Concat all the even numbers from 10 to 0 (both inclusive) in descending order using a while loop. (1086420)
-for (let c = 10; c>= 0; c = c - 1) {
-    if (c % 2 == 0) {
-        console.log(c)
-    }
+let finalString = "";
+let initialValue = 10;
+
+while (initialValue >= 0) {
+    if (initialValue % 2 == 0)
+    finalString += initialValue;
+    initialValue--;
 }
+console.log (finalString) 
 
 // Comparisoin
 
@@ -69,8 +76,8 @@ Example:
 */
 let num1 = Number(prompt(`Enter a number`))
 let num2 = Number(prompt(`Enter another number`))
-if (num1 == num2) {
-    alert(true)
-} else {
+if (isNaN (num1) || isNaN (num2)) {
     alert(`Enter a valid value`)
+} else {
+    alert(num1 === num2);
 }
